@@ -1,7 +1,7 @@
 from collections import deque
 
 # 시간복잡도 O(n)
-def solution4(nums):
+def other_solution_2(nums):
     answer = deque()
     answer.appendleft(nums[0])
     for i in range(1, len(nums)): # 시간복잡도 O(n)
@@ -10,7 +10,7 @@ def solution4(nums):
     return list(answer)
 
 # 시간복잡도 O(n)
-def solution3(nums):
+def other_solution_1(nums):
     prev = 999999
     answer = deque()
     for num in nums: # 시간복잡도 O(n)
@@ -20,7 +20,7 @@ def solution3(nums):
     return list(answer)
 
 # 시간복잡도 O(n)
-def solution2(nums):
+def my_solution_2(nums):
     distinct = deque(set(nums))
     answer = deque()
     for i in range(len(distinct)): # 시간복잡도 O(n)
@@ -29,7 +29,7 @@ def solution2(nums):
     return list(answer)
 
 # 시간복잡도 O(nlogn)
-def solution1(nums):
+def my_solution_1(nums):
     distinct = set(nums)
     answer = list(distinct)
     answer.sort(reverse=True)
@@ -38,9 +38,9 @@ def solution1(nums):
 
 
 if __name__ == '__main__':
-    print(solution4([0, 1, 1, 1, 2, 2, 2, 3]))
-    print(solution4([1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 5]))
-    print(solution4([0, 0, 0, 3, 3, 3, 5, 7, 7, 7]))
-    print(solution4([1, 2, 3, 4, 5, 6, 7, 7, 7, 8, 9]))
+    print(other_solution_2([0, 1, 1, 1, 2, 2, 2, 3]))
+    print(other_solution_2([1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 5]))
+    print(other_solution_2([0, 0, 0, 3, 3, 3, 5, 7, 7, 7]))
+    print(other_solution_2([1, 2, 3, 4, 5, 6, 7, 7, 7, 8, 9]))
 
 

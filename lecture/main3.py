@@ -1,4 +1,4 @@
-def solution(nums):
+def my_solution_1(nums):
     answer = 0
     length = 0
 
@@ -15,9 +15,9 @@ def solution(nums):
 
 
 if __name__ == '__main__':
-    print(solution([1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1]))
-    print(solution([0, 0, 1, 0, 1, 0, 0]))
-    print(solution([1, 1, 1, 1, 1]))
-    print(solution([1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1]))
+    print(my_solution_1([1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1]))
+    print(my_solution_1([0, 0, 1, 0, 1, 0, 0]))
+    print(my_solution_1([1, 1, 1, 1, 1]))
+    print(my_solution_1([1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1]))
 
 

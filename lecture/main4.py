@@ -1,14 +1,14 @@
 from collections import deque
 
 # 시간복잡도 O(k)
-def solution(nums, k):
+def other_solution_2(nums, k):
     answer = deque(nums)
     answer.rotate(-k) # 시간복잡도 O(k)
     return list(answer)
 
 
 # 시간복잡도 O(k)
-def solution2(nums, k):
+def other_solution_1(nums, k):
     answer = deque(nums)
 
     for i in range(k): # 시간복잡도 O(k)
@@ -20,7 +20,7 @@ def solution2(nums, k):
 
 
 # 시간복잡도 O(len(nums))
-def solution1(nums, k):
+def my_solution_1(nums, k):
     reverse = []
     answer = []
 
@@ -34,9 +34,9 @@ def solution1(nums, k):
 
 
 if __name__ == '__main__':
-    print(solution([3, 7, 1, 5, 9, 2, 8], 3))
-    print(solution([2, 12, 2, 1, 3, 3, 9], 2))
-    print(solution([1, 2, 5, 4, 6, 7, 9], 6))
-    print(solution([1, 3, 6, 8, 14, 2, 1, 7], 5))
+    print(my_solution_1([3, 7, 1, 5, 9, 2, 8], 3))
+    print(my_solution_1([2, 12, 2, 1, 3, 3, 9], 2))
+    print(my_solution_1([1, 2, 5, 4, 6, 7, 9], 6))
+    print(my_solution_1([1, 3, 6, 8, 14, 2, 1, 7], 5))
 
 

@@ -1,4 +1,4 @@
-def solution(nums):
+def my_solution_1(nums):
     idx = 0
     answer = nums[idx]
 
@@ -11,7 +11,7 @@ def solution(nums):
 
 
 if __name__ == '__main__':
-    print(solution([7, 10, 5, 3, 2, 15, 19]))
-    print(solution([-12, 12, 30, -15, -5, 3, 9, -11, 14]))
+    print(my_solution_1([7, 10, 5, 3, 2, 15, 19]))
+    print(my_solution_1([-12, 12, 30, -15, -5, 3, 9, -11, 14]))
 
 
