@@ -35,6 +35,9 @@
     
     # 삼항연산자
     answer = [num1, num2] if num1 < num2  else [num2, num1]
+    
+    # between
+    0 <= i + dx[d] < n and 0 <= j + dy[d] < n
 
 
 ```
