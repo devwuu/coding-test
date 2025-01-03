@@ -38,6 +38,10 @@
     
     # between
     0 <= i + dx[d] < n and 0 <= j + dy[d] < n
+    
+    # 기타
+    list(str) # 문자열을 문자 배열로
+    Count(str) # 문자열에 포함된 문자의 빈도, list 요소의 빈도
 
 
 ```
