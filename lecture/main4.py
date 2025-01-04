@@ -12,7 +12,7 @@ def other_solution_1(nums, k):
     answer = deque(nums)
 
     for i in range(k): # 시간복잡도 O(k)
-        letter = answer.popleft() # 덱은 연결리스트라서 O(1) 시간 복잡도를 가짐, 그냥 리스트로 두고 옮기면 O(n)이 됨(요소가 이동해서)
+        letter = answer.popleft() # 덱은 양쪽 끝에서 삽입/삭제시 O(1) 시간 복잡도를 가짐, 그냥 리스트로 두고 옮기면 O(n)이 됨(요소가 이동해서)
         answer.append(letter)
 
     return list(answer)
