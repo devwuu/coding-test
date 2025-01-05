@@ -3,7 +3,7 @@ from collections import Counter
 # o(nlogn) 또는 o(n)으로 문제 풀이
 def my_solution_1(nums):
     answer = 9999999 # 원소는 최대 1,000,000까지
-    cnt = Counter(nums)
+    cnt = Counter(nums) # o(n)
     for key, value in cnt.items(): # 최대 o(n)
         if key == value:
             answer = min(answer, key)

@@ -3,7 +3,7 @@ from collections import defaultdict, Counter # 기본값 타입을 정할 수 �
 # counter를 사용하는 방법 o(n)
 def other_solution_1(nums):
     answer = -1
-    cnt = Counter(nums) # 배열의 원소들의 빈도수를 카운트해줌, dictionary 의 확장형
+    cnt = Counter(nums) # 배열의 원소들의 빈도수를 카운트해줌, dictionary 의 확장형, o(n)
     for key, item in cnt.items():
         if item == 1:
             answer = max(key, answer)

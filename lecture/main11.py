@@ -4,7 +4,7 @@ import math
 
 def other_solution_1(s):
 
-    str = Counter(s)
+    str = Counter(s) # o(n)
     odd = 0
     length = len(s)
     for key, value in str.items():
@@ -16,7 +16,7 @@ def other_solution_1(s):
 
 def my_solution_2(s):
 
-    str = Counter(s)
+    str = Counter(s) # o(n)
     odd = 0
     length = 0
     for key, value in str.items():
@@ -32,7 +32,7 @@ def my_solution_2(s):
 
 def my_solution_1(s):
 
-    str = Counter(s)
+    str = Counter(s) # o(n)
     odd = 0
     length = 0
     for key, value in str.items():

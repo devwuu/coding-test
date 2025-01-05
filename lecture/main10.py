@@ -5,7 +5,7 @@ from collections import Counter
 
 def my_solution_1(s):
 
-    splited = Counter(s)
+    splited = Counter(s) # o(n)
 
     odd = 0
     for key, value in splited.items(): # o(n)
