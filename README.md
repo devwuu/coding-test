@@ -22,6 +22,7 @@
     from collections import deque
     from collections import defaultdict
     import math
+    from bisect import bisect_left, bisect_right
 
     # a와 b 중 큰 값
     max(a, b) 
@@ -55,6 +56,11 @@
     # 새로운 list 반환
     sorted(list) # ㅣist를 오름차순 정렬
     sorted(list, reverse=True) # ㅣist를 내림차순 정렬하
+    
+    # 이진탐색 
+    bisect_left() # lower (크거나 같은 것 중 가장 작은 것)
+    bisect_right() # upper (큰 것 중 가장 작은 것)
+    # 값이 없으며녀 len()(default right value)을 반환함
     
     # 기타
     list(str) # 문자열을 문자 배열로
