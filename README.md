@@ -60,11 +60,19 @@
     # 이진탐색 
     bisect_left() # lower (크거나 같은 것 중 가장 작은 것)
     bisect_right() # upper (큰 것 중 가장 작은 것)
-    # 값이 없으며녀 len()(default right value)을 반환함
+    # 값이 없으면 len()(default right value)을 반환함
     
     # 기타
     list(str) # 문자열을 문자 배열로
     Count(str) # 문자열에 포함된 문자의 빈도, list 요소의 빈도
+    "".join(stack) # "구분자".join(리스트) -> 문자열 합치기
+    
+    # 예외처리
+    try:
+        pass # 로직
+    except IndexError:
+        pass # 로직
+
 ```
 
 ## 자료구조
@@ -96,4 +104,33 @@
     
     dq.append(9) # 오른쪽에 추가하기
     dq.appendleft(9) # 왼쪽에 추가하기
+```
+
+### 스택
+* stack 대신 list를 사용하면 됨
+```python
+st = []
+
+st.append(1)
+st.pop()
+st[-1] # 스택의 가장 위에 있는 항목 확인
+# 인덱스 : [ 0,  1,  2,  3]
+#      : [-4, -3, -2, -1] 
+
+len(st) == 0 # 스택이 비어있는지 확인
+if st: # 이렇게 바로 쓸 수도 있음. 비어있으면 False
+    pass 
+```
+
+### 큐
+* FIFO
+* 큐 대신 데크를 쓰면 됨
+```python
+q = deque()
+
+q.append() # 오른쪽에서 집어넣고
+q.popleft() # 왼쪽에서 꺼낸다
+len(q) == 0 # queue가 비어있는지 확인
+while q : # 이렇게 바로 쓸 수도 있음. 비어있으면 False
+    pass # 로직 
 ```
