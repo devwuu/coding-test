@@ -19,11 +19,11 @@ def BFS(board, i, j):
     dq = deque()
     dq.append([i, j]) # 최초 노드
     while dq: # 더이상 방문할 노드가 없을 때까지 반복 -> 이 반복이 끝나면 하나의 트리(영역)을 순회 완료한 것
-        cur = dq.popleft()
-        board[cur[0]][cur[1]] = 0 # 방문 완료된 자리는 체크 (무한 방문 방지)
+        x, y = dq.popleft()
+        board[x][y] = 0 # 방문 완료된 자리는 체크 (무한 방문 방지)
         for d in range(4):
-            nx = cur[0] + dx[d]
-            ny = cur[1] + dy[d]
+            nx = x + dx[d]
+            ny = y + dy[d]
             if 0 <= nx < 5 and 0 <= ny < 5 and board[nx][ny] == 1:
                 dq.append([nx, ny]) # 다음번에 방문할 노드를 넣어준다
 
